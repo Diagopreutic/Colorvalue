@@ -84,7 +84,7 @@ const ColorPicker = () => {
 
     !threshold && setThreshold({r:Math.round(avgRed),g:Math.round(avgGreen),b:Math.round(avgBlue)});
 
-    if(threshold && colors.length >= 10) {
+    if(threshold && colors.length >= 100) {
       alert("Only 10 selections can be made!");
       return;
     }
