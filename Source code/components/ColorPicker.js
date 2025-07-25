@@ -381,7 +381,7 @@ const ColorPicker = () => {
         </div>
 
         <div className={styles.formSection} >
-          <p>4. View selected <span style={colors.length>=10 ? {color:'red'} : {}}>{`(${colors.length}/10)`}</span></p> 
+          <p>4. View selected <span style={colors.length>=100 ? {color:'red'} : {}}>{`(${colors.length}/100)`}</span></p> 
           <div className={styles.colorsection} id="selectedColor">
             {colors.map((color, index) => (
               <Color
