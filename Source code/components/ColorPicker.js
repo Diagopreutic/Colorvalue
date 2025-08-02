@@ -85,7 +85,7 @@ const ColorPicker = () => {
     !threshold && setThreshold({r:Math.round(avgRed),g:Math.round(avgGreen),b:Math.round(avgBlue)});
 
     if(threshold && colors.length >= 100) {
-      alert("Only 10 selections can be made!");
+      alert("Only 100 selections can be made!");
       return;
     }
 
@@ -380,6 +380,9 @@ const ColorPicker = () => {
           </div>
         </div>
 
+        <div className={styles.formSection}>
+          <p>3. View Microorganism </p>
+          </div>
         <div className={styles.formSection} >
           <p>4. View selected <span style={colors.length>=100 ? {color:'red'} : {}}>{`(${colors.length}/100)`}</span></p> 
           <div className={styles.colorsection} id="selectedColor">
